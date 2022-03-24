@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.common.json",
+  "compilerOptions": {
+    "module": "es2020",
+    "declaration": false,
+    "removeComments": false,
+    "emitDecoratorMetadata": false,
+    "incremental": false
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

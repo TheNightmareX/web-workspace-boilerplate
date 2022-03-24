@@ -1,0 +1,11 @@
+// Make editors and tools to work properly.
+{
+  "extends": "./tsconfig.common.json",
+  "ts-node": { "files": true },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}
