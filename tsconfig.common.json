@@ -16,7 +16,9 @@
     "lib": ["es2020", "dom"],
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "paths": {}
+    "paths": {
+      "common": ["projects/common/src"]
+    }
   },
   "ts-node": { "files": true }
 }
