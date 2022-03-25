@@ -2,9 +2,6 @@
   "extends": "./tsconfig.common.json",
   "compilerOptions": {
     "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "incremental": true
+    "emitDecoratorMetadata": true
   }
 }
