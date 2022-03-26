@@ -15,10 +15,7 @@
     "target": "es2017",
     "lib": ["es2020", "dom"],
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "paths": {
-      "common": ["projects/common/src"]
-    }
+    "skipLibCheck": true
   },
   "ts-node": { "files": true }
 }

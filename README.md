@@ -77,7 +77,7 @@ But there are still some small problems:
 - We cannot use the library without the first build.
 - Auto-import will refer to `projects/my-lib/src` or `projects/my-lib/lib` instead of `my-lib`.
 
-They are easy to resolve. We just need to add a TypeScript path mapping in `/tsconfig.common.json`(this file locates at the root of the workspae):
+They are easy to resolve. We just need to add a TypeScript path mapping in `/tsconfig.json`(This file is only used to make editors and tools work, and is not used in builds):
 
 ```json
 {
