@@ -21,7 +21,7 @@
     "test:server": "npm run test:server:unit & npm run test:server:e2e",
     "test:server:unit": "jest --config ./projects/server/jest.config.unit.js",
     "test:server:e2e": "jest --config ./projects/server/jest.config.e2e.js",
-    "format": "prettier --write \"projects/**/*.{html,less,ts,json}\" \"*.{json,js,ts,md}\"",
+    "format": "prettier --write \"{projects/**/*,*}.{html,css,less,scss,sass,ts,js,json,md}\"",
     "lint": "eslint \"projects/**/*.ts\" --cache --fix"
   },
   "dependencies": {
