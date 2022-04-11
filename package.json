@@ -9,8 +9,6 @@
   "private": true,
   "license": "Apache-2.0",
   "scripts": {
-    "ng": "ng",
-    "nest": "nest",
     "dev": "concurrently \"npm:dev:*\"",
     "dev:client": "ng serve",
     "dev:server": "nest start server -w",
