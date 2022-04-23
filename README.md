@@ -54,15 +54,21 @@ Powered by TypeScript's feature [Project Reference](https://www.typescriptlang.o
 }
 ```
 
-We are almost there. To use these code from somewhere else, we need to `install` this directory to `node_modules` as a `local package`:
+To use these code from somewhere else, we can `install` this directory to `node_modules` as a `local package`, but a better solution is to utilize `npm`'s `workspace` feature as a `local package` cannot share dependencies. We can add the following config in our root `package.json` to make all packages under the `projects` directory be workspaces:
 
-```sh
-npm i projects/my-lib
+```json
+{
+  "workspaces": ["projects/*"]
+}
 ```
 
-This will create a symbol link at `node_modules/my-lib` referring to `projects/my-lib`, and add it as a dependency to the root `package.json` so that the symbol link will be automatically created when performing `npm i`.
+After performing an initial install, a symbol link will be created at `node_modules/my-lib` referring to `projects/my-lib`, so that we can import from the library:
 
-Now our library will be available to other projects once we build them for the first time:
+```sh
+npm i
+```
+
+Our library will be available to the other projects as long as we build them for the first time:
 
 ```sh
 npm run build:libs
