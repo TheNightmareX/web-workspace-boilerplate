@@ -36,7 +36,7 @@ Then, create a `src` directory with an `index.ts` in it. To make the code in `sr
 
 ```json
 {
-  "extends": "../../tsconfig.lib.base.json",
+  "extends": "../../tsconfig.lib.json",
   "compilerOptions": {
     "outDir": "./lib"
   }
