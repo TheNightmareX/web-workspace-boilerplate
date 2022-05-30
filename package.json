@@ -23,7 +23,7 @@
     "test:server": "npm run test:server:unit & npm run test:server:e2e",
     "test:server:unit": "jest --config ./projects/server/jest.config.unit.js",
     "test:server:e2e": "jest --config ./projects/server/jest.config.e2e.js",
-    "lint": "eslint \"projects/**/*.ts\" --cache --fix & prettier --write \"{projects/**/*,*}.{html,css,less,scss,sass,js,json,md}\""
+    "lint": "prettier --write \"{projects/**/*,*}.{html,css,less,scss,sass,js,json,md}\" && eslint \"projects/**/*.ts\" --cache --fix"
   },
   "dependencies": {
     "@angular/animations": "~13.3.2",
