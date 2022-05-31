@@ -6,7 +6,7 @@
     "module": "CommonJS",
     // better auto-import
     "paths": {
-      "common": ["projects/common/src"]
+      "common": ["./projects/common/src"]
     }
   },
   // Angular Language Service
