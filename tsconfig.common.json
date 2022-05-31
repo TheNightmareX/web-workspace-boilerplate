@@ -10,10 +10,10 @@
     "sourceMap": true,
     "downlevelIteration": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "importHelpers": true,
-    "target": "es2017",
-    "lib": ["es2020", "dom"],
+    "target": "ES2017",
+    "lib": ["ES2020", "DOM"],
     "esModuleInterop": true,
     "skipLibCheck": true
   },
