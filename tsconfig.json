@@ -1,6 +1,6 @@
 // config for only editors and tools
 {
-  "extends": "./tsconfig.common.json",
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     // module lazy importing
     "module": "CommonJS",
